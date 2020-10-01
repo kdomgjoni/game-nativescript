@@ -1,0 +1,43 @@
+<GridLayout class="root-grid" rows="*, *" >
+    <StackLayout row="0">
+        <GridLayout [ngClass]="{'down-side': btn2}" rows="40, *, auto, *, 50" columns="50, *, *, *, 50">
+            <Button class="roll roll-up" [isEnabled]="btn2" row="1" column="1" text="Roll"
+            (tap)="roll()">
+            </Button>
+            <Button class="hold hold-up" [isEnabled]="btn2" row="1" column="3" text="Hold"
+            (tap)="hold()">
+            </Button>
+            <Label class="current-up" row="2" column="2" backgroundColor="#EB4D4D"
+                text="{{scores[1]}}">
+            </Label>
+
+            <Label class="counter counter-up" row="3" column="2"
+                text="{{player2}}">
+            </Label>
+        </GridLayout>
+    </StackLayout>
+
+    <StackLayout row="1">
+        <GridLayout [ngClass]="{'down-side': btn1}" rows="50, *, auto, *, 40" columns="50, *, *, *, 50">
+            <Label class="counter" row="1" column="2"
+                text="{{player1}}">
+            </Label>
+            <Label class="current" row="2" column="2" backgroundColor="#EB4D4D"
+                text="{{scores[0]}}">
+            </Label>
+
+            <Button class="hold" [isEnabled]="btn1" row="3" column="1" text="Hold"
+                (tap)="hold()">
+            </Button>
+            <Button class="roll" [isEnabled]="btn1" row="3" column="3" text="Roll"
+                (tap)="roll()">
+            </Button>
+        </GridLayout>
+    </StackLayout>
+</GridLayout>
+
+<AbsoluteLayout width="100" height="100">
+    <Image shadow="2" src='~/app/images/dice-{{dice}}.png' stretch="aspectFit"></Image>
+</AbsoluteLayout>
+
+

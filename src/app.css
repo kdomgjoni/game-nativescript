@@ -1,0 +1,109 @@
+@import "~@nativescript/theme/css/core.css";
+@import "~@nativescript/theme/css/blue.css";
+
+/* Place any CSS rules you want to apply on both iOS and Android here.
+This is where the vast majority of your CSS code goes. */
+@import "~@nativescript/theme/css/core.css";
+@import "~@nativescript/theme/css/blue.css";
+@import '~@nativescript/theme/css/core.css';
+@import '~@nativescript/theme/css/default.css';
+
+/* Place any CSS rules you want to apply on both iOS and Android here.
+This is where the vast majority of your CSS code goes. */
+.root-grid{
+    background-color:#F0F0F0;
+}
+.down-side{
+    background-color: #E0E0E0;
+}
+AbsoluteLayout Image{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 10%;
+}
+.counter{
+    font-size: 70px;
+    text-align: center;
+}
+.current{
+    font-size: 50px;
+    text-align: center;
+}
+.current-text{
+    font-size: 15px;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+.hold, .roll{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    background: #88adb4;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+}
+.current-up{
+    font-size: 50px;
+    text-align: center;
+
+}
+.current-text-up{
+    transform: rotate(-180deg);
+    font-size: 15px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.counter-up, .roll-up, .hold-up, .current-up{
+    transform: rotate(-180deg);
+}
+.coverImage {
+    background-color: #D6D5C9;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.start-header{
+    font-family: 'PermanentMarker-Regular';
+    font-size: 40px;
+    font-weight: bold;
+    color: #D63230;
+    margin-bottom: 50px;
+}
+.start-entry, .modal-header{
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: bold;
+    color: #3A2E39;
+}
+.btn-play{
+    background-color: #CDC392;
+    width: 400px;
+    border-radius: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #3A2E39;
+}
+.entry-input{
+    max-width: 500px;
+    color: #3A2E39;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.fas {
+    font-family: "Font Awesome 5 Free", "fa-solid-900";
+    font-weight: 900;
+    font-size: 40px;
+}
+.rules{
+    width: 50;
+    height: 50;
+    border-radius: 50%;
+    margin-top: 60px;
+}

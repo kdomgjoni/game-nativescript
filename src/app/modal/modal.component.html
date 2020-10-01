@@ -1,0 +1,4 @@
+<StackLayout class="modal-layout" (loaded)="onLoaded($event)" width="300" height="260">
+    <Label class="h2 text-center modal-header" text="Player {{winner}} is the winner!" textWrap="true"></Label>
+    <Button class="btn btn-outline btn-play" text="Play Again" (tap)="close()"></Button>
+</StackLayout>

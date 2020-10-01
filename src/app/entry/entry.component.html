@@ -1,0 +1,9 @@
+<StackLayout orientation="vertical" verticalAlignment="center" class="coverImage" width="100%" height="100%">
+    <Label class="h2 text-center start-header" text="Roller Dice!" textWrap="true"></Label>
+    <Label class="h4 text-center start-entry" text="ENTER THE VALUE"></Label>
+    <TextField class="entry-input" [(ngModel)]='entryValue' hint="Chose a number" secure="false" keyboardType="datetime" returnKeyType="done" autocorrect="false"
+        maxLength="2">
+    </TextField>
+    <Button class="btn btn-outline btn-play" (tap)="play()" text="PLAY"></Button>
+    <Button class="fas rules" (tap)="dialog()" text="&#xf05a;"></Button>
+</StackLayout>
